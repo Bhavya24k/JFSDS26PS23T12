@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack+ - Services</title>
+    <style>
+       body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url('fruits.png'); /* Path to your fruits image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            background-color: #3e6f64; /* Match background gradient or solid color */
+            color: rgb(244, 241, 241);
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2a494e; /* Adjust this to match your image */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 50px;
+            color: #0a1016;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+
+        .service-box {
+            background-color: rgba(62, 103, 111, 0.9); /* Slightly transparent box */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .service-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .service-box input[type="text"], .service-box input[type="date"], .service-box input[type="time"], .service-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            font-size: 1em;
+        }
+
+        .service-box input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: #121a22; /* Button background color */
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .service-box input[type="submit"]:hover {
+            background-color: #0a1016;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HealthTrack+</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Our Services</h1>
+
+        <!-- Booking Appointment Section -->
+        <div class="service-section">
+            <div class="service-box">
+                <h2>Book an Appointment</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <input type="date" name="appointment-date" required>
+                    <input type="time" name="appointment-time" required>
+                    <input type="submit" value="Book Appointment">
+                </form>
+            </div>
+        </div>
+
+        <!-- Tracking Health Section -->
+        <div class="service-section">
+            <div class="service-box">
+                <h2>Track Your Health</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <textarea name="health-update" rows="5" placeholder="Enter your health status (e.g., weight, diet, activities)..." required></textarea>
+                    <input type="submit" value="Submit Health Update">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

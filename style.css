@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('fruits.png'); /* Path to your fruits image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: #36756f;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 10em; /* Increase the size of HealthTrack+ */
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-section, .password-section {
+    width: 45%;
+    padding: 10px;
+    background-color: #5bb1a3;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #c7d9c2;
+}
+
+form {
+    text-align: left;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #36756f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a5652;
+}

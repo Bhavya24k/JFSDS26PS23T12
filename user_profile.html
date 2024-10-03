@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack+ User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">HealthTrack+</div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="#">Services</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="user_profile.html">Profile</a>
+            </div>
+        </nav>
+        <h1>HealthTrack+ User Profile</h1>
+
+        <!-- Profile Information -->
+        <div class="profile-container">
+            <div class="profile-section">
+                <h2>User Profile</h2>
+                <div id="profile-details">
+                    <p><strong>Name:</strong> <span id="user-name"></span></p>
+                    <p><strong>Email:</strong> <span id="user-email"></span></p>
+                    <p><strong>Age:</strong> <span id="user-age"></span></p>
+                    <p><strong>BMI:</strong> <span id="user-bmi"></span></p>
+                    <p><strong>Health Status:</strong> <span id="user-health"></span></p>
+                    <p><strong>Previous Appointments:</strong> <span id="user-appointments"></span></p>
+                </div>
+            </div>
+
+            <!-- Change Password Section -->
+            <div class="password-section">
+                <h2>Change Password</h2>
+                <form id="change-password-form">
+                    <label for="new-password">Enter New Password:</label>
+                    <input type="password" id="new-password" required>
+                    <br>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" required>
+                    <br>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

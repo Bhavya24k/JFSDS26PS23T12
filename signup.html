@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack+ - Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: rgb(3, 3, 3);
+            background-image: url('fruits.png'); /* Path to your fruits image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: rgb(14, 13, 13);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* Full height minus the height of the navigation bar */
+        }
+
+        .signup-box {
+            background-color: rgba(62, 103, 111, 0.9); /* Slightly transparent box */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .signup-box h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .signup-box input[type="text"], .signup-box input[type="email"], .signup-box input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            font-size: 1em;
+        }
+
+        .signup-box input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: #121a22; /* Button background color */
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup-box input[type="submit"]:hover {
+            background-color: #0a1016;
+        }
+
+        .login {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .login a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HealthTrack+</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="signup-box">
+            <h2>SIGN UP</h2>
+            <form action="#" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="login">
+                Already have an Account? <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

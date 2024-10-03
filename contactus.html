@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack+ - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3e676f; /* Background color */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2a494e; /* Navbar background */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 3em;
+            font-family: 'Brush Script MT', cursive; /* Script font for "CONTACT" */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            color: white;
+        }
+
+        .content .left {
+            flex: 1;
+        }
+
+        .content .right {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .form-container {
+            background-color: #b2aaa3;
+            padding: 35px;
+            border-radius: 5px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px -5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #c8b7a6;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #a69383;
+        }
+
+        .email-info {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HealthTrack+</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="user_profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <h1>CONTACT</h1>
+
+    <div class="content">
+        <div class="left">
+            <p>Please fill out the form below to send us an email. We look forward to hearing from you and are</p><p> here to assist you with any questions, feedback, or support you may need.</p>
+            <p class="email-info"><strong>E-mail:</strong> healthtrack@gmail.com</p>
+        </div>
+
+        <div class="right">
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
